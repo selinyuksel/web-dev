@@ -1,0 +1,117 @@
+body {
+    font-family:"Helvetica Neue";
+    background-color: black;
+}
+
+.wd-back {
+    color: dimgray;
+    font-size: 13px;
+    text-decoration: none;
+    padding-bottom: 16px;
+}
+
+.wd-title {
+    color: white;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 20px;
+    border: 1px solid dimgray;
+}
+
+.wd-title-handle {
+    color: darkgray;
+    font-size: 13px;
+}
+
+.wd-border{
+    border-left: 1px solid dimgray;
+    border-right: 1px solid dimgray;
+    border-bottom: 1px solid dimgray;
+}
+
+.wd-avatar {
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 50px;
+    width: 48px;
+    float: left;
+}
+
+.wd-circular-image {
+    width: 48px;
+    border-radius: 50px;
+}
+.wd-user {
+    padding-top: 12px;
+    padding-left: 12px;
+    font-size: 15px;
+    color: white;
+    float:left;
+}
+.wd-handle {
+    padding-top: 12px;
+    padding-left: 12px;
+    font-size: 15px;
+    color: dimgray;
+    float: left;
+}
+
+.wd-text {
+    color: white;
+    font-size: 15px;
+    padding-left: 76px;
+    padding-top: 12px;
+    padding-right: 16px;
+    max-width: 506px;
+}
+
+.wd-image-post {
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.wd-post-title {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    max-width: 480px;
+    margin-left: 64px;
+    padding: 12px;
+    border-left: 1px solid dimgray;
+    border-right: 1px solid dimgray;
+}
+
+.wd-post-text {
+    color: dimgray;
+    font-size: 15px;
+    max-width: 480px;
+    margin-left: 64px;
+    padding: 12px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-left: 1px solid dimgray;
+    border-right: 1px solid dimgray;
+    border-bottom: 1px solid dimgray;
+}
+
+.wd-icons {
+    color: rgb(110, 118, 125);
+    font-size: 25px;
+    padding-left: 76px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+
+}
+
+.wd-heart-icon {
+    color: red;
+    font-size: 25px;
+    padding-left: 76px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+}
