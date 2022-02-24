@@ -1,108 +1,46 @@
-/*Page Styling*/
+/*admin*/
 body {
     font-family:"Helvetica Neue";
-    background-color: black;
+    background-color: white;
 }
-
 .wd-back {
     color: dimgray;
     font-size: 13px;
     text-decoration: none;
-    padding-right: 16px;
 }
 
-.wd-thick-line {
-    border: 1px solid rgb(40,40,40);
-    padding: 4px;
-    background-color: rgb(20,20,20);
-}
-.wd-small-break {
-    padding-bottom: 5px;
-}
-.wd-big-break {
-    padding-bottom:20px;
-}
-.wd-post-border {
-    border-bottom: 1px solid rgb(50,50,50);
-}
-
-/*Part A*/
-.wd-search {
-    font-family: "Helvetica Neue";
-    padding: 5px;
-    padding-right: 300px;
-    color: white;
-    background-color: darkgray;
+/*images*/
+.wd-profile-img{
+    float: left;
+    width: 45px;
+    height: auto;
     border-radius: 50px;
-    width: auto;
 }
-.wd-gear {
-    padding: 16px;
-    color: rgb(29,161,242);
+
+.wd-thumbnail {
     float: right;
-    text-decoration: none;
-}
-.wd-form-styling {
-    padding-left: 20px;
-    padding-right: 25px;
-    padding-bottom: 16px;
-}
-
-/*Part B*/
-.wd-selected-hyperlink {
-    padding: 16px;
-    color: rgb(29,161,242);
-    font-size: 15px;
-    border-bottom: 2px solid rgb(29,161,242);
-    text-decoration: none;
-}
-.wd-hyperlink{
-    color: rgb(110, 118, 125);
-    font-size: 15px;
-    padding: 16px;
-    text-decoration: none;
-}
-
-/*Part C*/
-.wd-suggested-posts-c {
-    color: rgb(110, 118, 125);
-    font-size: 13px;
-    padding-bottom: 16px;
-}
-.wd-title-c {
-    color: white;
-    font-weight: bold;
-    font-size:15px;
-    padding-bottom: 5px;
-}
-
-/*Part D*/
-.wd-suggested-posts-d {
-    color: white;
-    font-size: 13px;
-    padding-bottom: 5px;
-}
-.wd-title-d {
-    color: white;
-    font-weight: bold;
-    font-size:15px;
-    padding-bottom: 50px;
-}
-.wd-image {
-    padding-right: 16px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 20px;
-    float: right;
-    border-radius: 30px;
+    border-radius: 20px;
     width: 100px;
     height: 100px;
 }
 
-/*Part E*/
-.wd-title-e {
-    color: white;
-    font-weight: bold;
-    font-size:15px;
-    padding-bottom: 70px;
+/*middle column*/
+.wd-search {
+    font-family: "Font Awesome 5 Pro", "Helvetica Neue";
+    border-radius: 50px;
+    width: 93%;
+    background-color: white;
+}
+.wd-bottom-break {
+    margin-bottom: 5px;
+}
+.card-img-overlay {
+    top: auto;
+}
+
+/*right column*/
+.wd-button{
+    top: 50%;
+    position: relative;
+    float: right;
 }
