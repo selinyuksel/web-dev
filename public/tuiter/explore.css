@@ -1,7 +1,7 @@
 /*admin*/
 body {
     font-family:"Helvetica Neue";
-    background-color: white;
+    background-color: black;
 }
 .wd-back {
     color: dimgray;
@@ -20,6 +20,7 @@ body {
 .wd-thumbnail {
     float: right;
     border-radius: 20px;
+    margin-left: 6px;
     width: 100px;
     height: 100px;
 }
