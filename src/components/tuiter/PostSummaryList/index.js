@@ -1,6 +1,6 @@
 import React from "react";
 import PostSummaryItem from "./PostSummaryItem";
-import post from "./posts.json"
+import post from "../data/posts.json"
 
 
 const PostSummaryList = () => {
@@ -9,8 +9,7 @@ const PostSummaryList = () => {
                 {
                     post.map(post => {
                         return(
-                            <PostSummaryItem post={post}/>
-                            );
+                            <PostSummaryItem post={post}/>);
                     })
                 }
             </ul>

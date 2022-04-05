@@ -4,7 +4,7 @@ import React from "react";
 const Todo = () => {
         return(
             <div className="container">
-                    <h1>Todo example</h1>
+                    <h3>Todo example</h3>
                     <TodoList/>
             </div>
         )

@@ -1,0 +1,48 @@
+/*admin*/
+body {
+    font-family:"Helvetica Neue";
+    background-color: black;
+    color: white;
+}
+.wd-back {
+    color: dimgray;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/*images*/
+.wd-profile-img{
+    float: left;
+    width: 45px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.wd-thumbnail {
+    float: right;
+    border-radius: 20px;
+    margin-left: 6px;
+    width: 100px;
+    height: 100px;
+}
+
+/*middle column*/
+.wd-search {
+    font-family: "Font Awesome 5 Pro", "Helvetica Neue";
+    border-radius: 50px;
+    width: 93%;
+    background-color: white;
+}
+.wd-bottom-break {
+    margin-bottom: 5px;
+}
+.card-img-overlay {
+    top: auto;
+}
+
+/*right column*/
+.wd-button{
+    top: 50%;
+    position: relative;
+    float: right;
+}
