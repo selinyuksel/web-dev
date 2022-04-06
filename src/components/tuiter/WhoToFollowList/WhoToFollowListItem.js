@@ -8,7 +8,6 @@ const WhoToFollowListItem = (
         handle: 'NASA',
         }
     }) => {
-    console.log(who);
     return(
         <li className="list-group-item">
             <div className="row">

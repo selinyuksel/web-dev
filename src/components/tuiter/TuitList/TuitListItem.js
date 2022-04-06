@@ -7,32 +7,22 @@ const TuitListItem   = ({tuit}) => {
     const deleteTuitClickHandler = () => {
         dispatch({type: 'delete-tuit', tuit})
     }
-    console.log(tuit);
     return(
         <li className="list-group-item">
             <div className="row">
-                <div className="col-10">
-                    <i onClick={deleteTuitClickHandler}
-                       className="fas fa-remove fa-2x fa-pull-right"/>
-                    <div style={{"color":"darkgray"}}>
-                        {tuit.topic}
-                    </div>
-                    <div>
-                        <span>
-                            <b>{tuit.userName}</b> <i className="fas fa-check-circle"/>
-                        </span>
-                        <span style={{"color":"darkgray"}}>
-                            - {tuit.time}
-                        </span>
-                        <b>{tuit.title}</b>
-                    </div>
-                    <div className="col-2">
-                        <img className="wd-thumbnail" src={tuit.image}/>
-                    </div>
-                    <div>
-                        <TuitStats tuit={tuit}/>
-                    </div>
+                <div className="col-2">
+                    <img className="wd-profile-img" src={tuit.avatarIcon}/>
                 </div>
+                <div className="col-10">
+                    <b>{tuit.userName}</b> <i className="fas fa-check-circle"/>
+                    <span style={{"color":"darkgray"}}> - {tuit.handle}</span>
+                    <i onClick={deleteTuitClickHandler}
+                       className="fas fa-times fa-pull-right"/><br/>
+                    {tuit.tuit}
+                </div>
+            </div>
+            <div className="row col-10 float-right">
+                <TuitStats tuit={tuit}/>
             </div>
 
         </li>

@@ -5,7 +5,6 @@ import WhoToFollowList from "../WhoToFollowList";
 import WhatsHappening from "../WhatsHappening/WhatsHappening";
 
 const HomeScreen = () => {
-    console.log("got here!!");
 
     return(
         <div className="row mt-2">

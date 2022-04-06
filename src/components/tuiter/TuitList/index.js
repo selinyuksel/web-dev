@@ -6,7 +6,6 @@ const selectAllTuits = (state) => state.tuits;
 
 const TuitList = () => {
     const tuits = useSelector(selectAllTuits);
-    console.log(tuits);
     return (
         <ul className="ttr-tuits list-group">
             {
