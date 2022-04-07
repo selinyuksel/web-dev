@@ -1,13 +1,16 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
+import {createTuit} from "../../actions/tuits-actions";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
+    // const tuitClickHandler = () => {
+    const [newTuit, setNewTuit] = useState({tuit: 'New tuit'});
     const dispatch = useDispatch();
-    const tuitClickHandler = () => {
-        dispatch({type: 'create-tuit',
-            tuit: whatsHappening
-        })};
+    //     dispatch({type: 'create-tuit',
+    //         tuit: whatsHappening
+    //     })};
+
     return (
         <div>
             <div className="row">
@@ -18,7 +21,9 @@ const WhatsHappening = () => {
                 <div className="col-10">
                 <textarea style={{color:"white", backgroundColor: "black"}}
                           value={whatsHappening}
-                          onChange={(event) => setWhatsHappening(event.target.value)}
+                          onChange={(e) =>
+                              setNewTuit({...newTuit,
+                                  tuit: e.target.value})}
                           className="form-control"
                           placeholder="What's happening?">
 
@@ -28,12 +33,12 @@ const WhatsHappening = () => {
             </div>
             <div className="row">
                 <span className="col-10 ms-5">
-                    <a href="#"><i className="fas fa-image ms-3"></i>  </a>
-                    <a href="#"><i className="fas fa-chart-bar ms-3"></i>  </a>
-                    <a href="#"><i className="fas fa-smile ms-3"></i>  </a>
-                    <a href="#"><i className="fas fa-calendar ms-3"></i>  </a>
+                    <a href="#"><i className="fas fa-image ms-3"/>  </a>
+                    <a href="#"><i className="fas fa-chart-bar ms-3"/>  </a>
+                    <a href="#"><i className="fas fa-smile ms-3"/>  </a>
+                    <a href="#"><i className="fas fa-calendar ms-3"/>  </a>
                 </span>
-                <button onClick={tuitClickHandler} className="col-2 btn btn-primary rounded-pill">
+                <button onClick={() => createTuit(dispatch, newTuit)} className="col-2 btn btn-primary rounded-pill">
                     Tuit
                 </button>
             </div>

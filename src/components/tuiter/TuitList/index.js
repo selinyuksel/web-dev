@@ -1,11 +1,16 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import TuitListItem from "./TuitListItem";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import {findAllTuits} from "../../actions/tuits-actions";
 
-const selectAllTuits = (state) => state.tuits;
+// const selectAllTuits = (state) => state.tuits;
 
 const TuitList = () => {
-    const tuits = useSelector(selectAllTuits);
+    const tuits = useSelector(state => state.tuits);
+    const dispatch = useDispatch();
+
+    useEffect(() => findAllTuits(dispatch),[]);
+
     return (
         <ul className="ttr-tuits list-group">
             {
