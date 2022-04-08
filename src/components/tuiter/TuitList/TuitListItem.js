@@ -15,7 +15,7 @@ const TuitListItem   = ({tuit}) => {
                 <div className="col-10">
                     <b>{tuit.userName}</b> <i className="fas fa-check-circle"/>
                     <span style={{"color":"darkgray"}}> - {tuit.handle}</span>
-                    <i onClick={deleteTuit(dispatch, tuit)}
+                    <i onClick={() => deleteTuit(dispatch, tuit)}
                        className="fas fa-times fa-pull-right"/><br/>
                     {tuit.tuit}
                     <div className = "wd-font-white">
