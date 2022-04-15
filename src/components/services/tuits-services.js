@@ -10,6 +10,7 @@ export const createTuit = async(tuit) => {
 export const findAllTuits = async() => {
     const response = await axios.get(TUITS_API);
     const tuits = response.data;
+    console.log(tuits);
     return tuits;
 }
 
@@ -20,8 +21,10 @@ export const deleteTuit = async(tuit) => {
 }
 
 export const updateTuit = async(tuit) => {
+    console.log("service tuit: " + tuit);
     const response = await axios
         .put(`${TUITS_API}/${tuit._id}`, tuit);
+        console.log("response: " + response.data);
     return response.data;
 }
 

@@ -18,18 +18,15 @@ const WhatsHappening = () => {
                     <img src='../../../tuiter/images/pic.JPG'
                          className="wd-profile-img"/>
                 </div>
-                <div className="col-10">
-                <textarea style={{color:"white", backgroundColor: "black"}}
-                          value={whatsHappening}
-                          onChange={(e) =>
-                              setNewTuit({...newTuit,
-                                  tuit: e.target.value})}
-                          className="form-control"
-                          placeholder="What's happening?">
-
-                </textarea>
-                    <br/>
+                <div className ="mt-0">
+                 <textarea className = "form-control"
+                           placeholder = "What's happening?"
+                           onChange={(e) =>
+                               setNewTuit({...newTuit,
+                                   tuit: e.target.value})}>
+                  </textarea>
                 </div>
+
             </div>
             <div className="row">
                 <span className="col-10 ms-5">
@@ -38,7 +35,9 @@ const WhatsHappening = () => {
                     <a href="#"><i className="fas fa-smile ms-3"/>  </a>
                     <a href="#"><i className="fas fa-calendar ms-3"/>  </a>
                 </span>
-                <button onClick={() => createTuit(dispatch, newTuit)} className="col-2 btn btn-primary rounded-pill">
+                <button onClick= {() =>
+                    createTuit(dispatch, newTuit)}
+                        className = "btn btn-primary float-end">
                     Tuit
                 </button>
             </div>

@@ -1,5 +1,6 @@
 import * as service from '../services/tuits-services';
 
+
 export const CREATE_TUIT = 'CREATE_TUIT';
 export const FIND_ALL_TUITS = 'FIND_ALL_TUITS';
 export const UPDATE_TUIT = 'UPDATE_TUIT';
@@ -22,6 +23,7 @@ export const findAllTuits = async(dispatch) => {
 }
 
 export const updateTuit = async (dispatch, tuit) => {
+    console.log("tuit: " + tuit);
     const status = await service.updateTuit(tuit);
     dispatch({
         type: UPDATE_TUIT,
