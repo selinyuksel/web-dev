@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import PostSummaryList from "../PostSummaryList/index";
 
 const ExploreComponent = () => {
@@ -18,11 +19,16 @@ const ExploreComponent = () => {
                 </div>
             </div>
             <ul className="nav mb-2 nav-tabs">
-                <li className="nav-item"><a className="nav-link active" href="for-you.html">For You</a></li>
-                <li className="nav-item"><a className="nav-link" href="trending.html">Trending</a></li>
-                <li className="nav-item"><a className="nav-link" href="news.html">News</a></li>
-                <li className="nav-item"><a className="nav-link" href="sports.html">Sports</a></li>
-                <li className="nav-item"><a className="nav-link" href="entertainment.html">Entertainment</a></li>
+                <li className="nav-item">
+                    <Link className="nav-link active" to="#">For You</Link></li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="#">Trending</Link></li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="#">News</Link></li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="#">Sports</Link></li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="#">Entertainment</Link></li>
             </ul>
             <div className="card text-white">
                 <img src="../../../tuiter/images/ship.jpeg" className="card-img" alt="..."/>
@@ -31,7 +37,7 @@ const ExploreComponent = () => {
                         className="card-title position-absolute bottom-0">SpaceX's Starship</h5>
                 </div>
             </div>
-            {PostSummaryList()}
+            <PostSummaryList/>
         </>
     );
 }

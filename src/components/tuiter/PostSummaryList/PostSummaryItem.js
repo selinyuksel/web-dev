@@ -17,15 +17,15 @@ const PostSummaryItem = (
             <img className="wd-thumbnail" src={post.image}/>
                 <div style={{"color":"darkgray"}}>{post.topic}</div>
                 <div>
-                    <b>{post.userName}</b>
                     <span>
+                    <b>{post.userName}</b>
                         <i className="fa fa-check-circle"></i>
                     </span>
                     <span style={{"color":"darkgray"}}>
-                        - {post.time}<br/>
+                         - {post.time}<br/>
                     </span>
                     <b>{post.title}</b><br/>
-                    {post.tweets} Tuits
+                    {post.tuit} Tuits
                 </div>
         </li>
 );

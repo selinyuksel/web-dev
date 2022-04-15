@@ -3,8 +3,8 @@ const ConditionalOutputInline = () => {
     const loggedIn = false;
     return (
         <>
-            { loggedIn && <h2>Welcome Inline</h2>}
-            {!loggedIn && <h2>Please login Inline</h2>}
+            { loggedIn && <h3>Welcome Inline</h3>}
+            {!loggedIn && <h3>Please login Inline</h3>}
         </>
     );
 };

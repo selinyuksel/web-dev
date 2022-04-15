@@ -1,102 +1,71 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const NavigationSidebar = (
     {
         active = 'explore'
     }) => {
     return(
-        <div>
-            <div className="d-none d-xl-block">
-                <div className="list-group">
-                    <a href="/" className="list-group-item">
-                        <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="../home.html" className={`list-group-item list-group-item-action 
-                    ${active === 'home' ? 'active' : ''}`} aria-current="true">
-                        <i className="fas fa-home"></i> Home
-                    </a>
-                    <a href="explore.html" className={`list-group-item list-group-item-action 
-                    ${active === 'explore' ? 'active' : ''}`} aria-current="true">
-                        <i className="fa fa-hashtag"></i> Explore
-                    </a>
-                    <a href="#" className={`list-group-item list-group-item-action 
-                    ${active === 'notifications' ? 'active' : ''}`} aria-current="true">
-                        <i className="fas fa-bell"></i> Notifications
-                    </a>
-                    <a href="#" className={`list-group-item list-group-item-action 
-                    ${active === 'messages' ? 'active' : ''}`} aria-current="true">
-                        <i className="fas fa-envelope"></i> Messages
-                    </a>
-                    <a href="../bookmarks.html" className={`list-group-item list-group-item-action 
-                    ${active === 'bookmarks' ? 'active' : ''}`} aria-current="true">
-                        <i className="fas fa-bookmark"></i> Bookmarks
-                    </a>
-                    <a href="#" className={`list-group-item list-group-item-action 
-                    ${active === 'lists' ? 'active' : ''}`} aria-current="true">
-                        <i className="fas fa-list"></i> Lists
-                    </a>
-                    <a href="../profile.html" className={`list-group-item list-group-item-action 
-                    ${active === 'profile' ? 'active' : ''}`} aria-current="true">
-                        <i className="fas fa-user"></i> Profile
-                    </a>
-                    <a href="#" className={`list-group-item list-group-item-action 
-                    ${active === 'more' ? 'active' : ''}`} aria-current="true">
-                        <span className="fa-stack" style={{"fontSize": "8px"}}>
-                            <i className="fa fa-circle fa-stack-2x"></i>
+        <>
+            <div className="list-group">
+                <Link to = "/labs" className ="list-group-item">
+                    <i style={{"color":"white"}} className ="fab fa-twitter"></i>
+                </Link>
+                <Link to="/tuiter" className = {`list-group-item
+                        ${active === 'home' ? 'active' : ""}`}>
+                    <i style={{"color":"white"}} className="fa fa-home"></i>
+                    <span style={{"color":"white"}} className="d-none d-xl-inline"> Home</span>
+                </Link>
+
+                <Link to="/tuiter/explore" className = {`list-group-item list-group-item-action
+                            ${active === 'explore' ? 'active' : ""}`}>
+                    <i style={{"color":"white"}} className="fa fa-hashtag"></i>
+                    <span style={{"color":"white"}} className="d-none d-xl-inline"> Explore</span>
+                </Link>
+
+                <Link to="#" className = {`list-group-item
+                        ${active === 'notifications' ? 'active' : ""}`}>
+                    <i style={{"color":"white"}} className="fa fa-bell"></i>
+                    <span style={{"color":"white"}} className="d-none d-xl-inline"> Notifications</span>
+                </Link>
+
+                <Link to="#" className = {`list-group-item
+                        ${active === 'messages' ? 'active' : ""}`}>
+                    <i style={{"color":"white"}} className="fa fa-envelope"></i>
+                    <span style={{"color":"white"}} className="d-none d-xl-inline"> Messages</span>
+                </Link>
+
+                <Link to="#" className = {`list-group-item
+                        ${active === 'bookmarks' ? 'active' : ""}`}>
+                    <i style={{"color":"white"}} className="fas fa-bookmark"></i>
+                    <span style={{"color":"white"}} className="d-none d-xl-inline"> Bookmarks</span>
+                </Link>
+
+                <Link to="#" className = {`list-group-item
+                        ${active === 'lists' ? 'active' : ""}`}>
+                    <i style={{"color":"white"}} className="fas fa-list"></i>
+                    <span style={{"color":"white"}} className="d-none d-xl-inline"> Lists</span>
+                </Link>
+
+                <Link to="#" className = {`list-group-item
+                        ${active === 'profile' ? 'active' : ""}`}>
+                    <i style={{"color":"white"}} className="fas fa-user"></i>
+                    <span style={{"color":"white"}} className="d-none d-xl-inline"> Profile</span>
+                </Link>
+
+                <Link to="#" className = {`list-group-item
+                        ${active === 'more' ? 'active' : ""}`}>
+                    <span className="fa-stack" style={{"fontSize": "8px"}}>
+                            <i className="fa fa-circle fa-stack-2x" style={{"color": "white"}}></i>
                             <i className="fa fa-ellipsis-h fa-stack-1x" style={{"color": "dimgray"}}></i>
-                        </span> More
-                    </a>
-                </div>
+                    </span>
+                    <span style={{"color":"white"}} className="d-none d-xl-inline"> More</span>
+                </Link>
                 <div className="d-grid mt-2">
-                    <a href="../tuit.html"className="btn btn-primary btn-block rounded-pill">Tweet</a>
+                    <a href="#"className="btn btn-primary btn-block rounded-pill">Tuit</a>
                 </div>
             </div>
-            <div className="d-none d-sm-block d-md-block d-lg-block d-xl-none">
-                <div className="list-group">
-                    <a href="/" className="list-group-item">
-                        <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="../home.html" className={`list-group-item list-group-item-action 
-                    ${active === 'home' ? 'active' : ''}`} aria-current="true">
-                        <i className="fas fa-home"></i>
-                    </a>
-                    <a href="explore.html" className={`list-group-item list-group-item-action 
-                    ${active === 'explore' ? 'active' : ''}`} aria-current="true">
-                        <i className="fa fa-hashtag"></i>
-                    </a>
-                    <a href="#" className={`list-group-item list-group-item-action 
-                    ${active === 'notifications' ? 'active' : ''}`} aria-current="true">
-                        <i className="fas fa-bell"></i>
-                    </a>
-                    <a href="#" className={`list-group-item list-group-item-action 
-                    ${active === 'messages' ? 'active' : ''}`} aria-current="true">
-                        <i className="fas fa-envelope"></i>
-                    </a>
-                    <a href="../bookmarks.html" className={`list-group-item list-group-item-action 
-                    ${active === 'bookmarks' ? 'active' : ''}`} aria-current="true">
-                        <i className="fas fa-bookmark"></i>
-                    </a>
-                    <a href="#" className={`list-group-item list-group-item-action 
-                    ${active === 'lists' ? 'active' : ''}`} aria-current="true">
-                        <i className="fas fa-list"></i>
-                    </a>
-                    <a href="../profile.html" className={`list-group-item list-group-item-action 
-                    ${active === 'profile' ? 'active' : ''}`} aria-current="true">
-                        <i className="fas fa-user"></i>
-                    </a>
-                    <a href="#" className={`list-group-item list-group-item-action 
-                    ${active === 'more' ? 'active' : ''}`} aria-current="true">
-                        <span className="fa-stack" style={{"fontSize": "8px"}}>
-                            <i className="fa fa-circle fa-stack-2x"></i>
-                            <i className="fa fa-ellipsis-h fa-stack-1x" style={{"color": "dimgray"}}></i>
-                        </span>
-                    </a>
-                </div>
-                <div className="d-grid mt-2">
-                    <a href="../tuit.html"className="btn btn-primary btn-block rounded-pill">Tweet</a>
-                </div>
-            </div>
-        </div>
+        </>
     );
 }
 export default NavigationSidebar;
